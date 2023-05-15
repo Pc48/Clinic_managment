@@ -15,8 +15,6 @@
 // DISPLAY FUNCTIONS
 //////////////////////////////////////
 
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
-// Display's the patient table header (table format)
 void displayPatientTableHeader(void)
 {
     printf("Pat.# Name            Phone#\n"
@@ -45,7 +43,6 @@ void displayPatientData(const struct Patient *patient, int fmt)
     }
 }
 
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // Display's appointment schedule headers (date-specific or all records)
 void displayScheduleTableHeader(const struct Date *date, int isAllRecords)
 {
@@ -65,7 +62,6 @@ void displayScheduleTableHeader(const struct Date *date, int isAllRecords)
     }
 }
 
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // Display a single appointment record with patient info. in tabular format
 void displayScheduleData(const struct Patient *patient,
                          const struct Appointment *appoint,
@@ -87,8 +83,6 @@ void displayScheduleData(const struct Patient *patient,
 //////////////////////////////////////
 // MENU & ITEM SELECTION FUNCTIONS
 //////////////////////////////////////
-
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // main menu
 void menuMain(struct ClinicData *data)
 {
@@ -127,7 +121,6 @@ void menuMain(struct ClinicData *data)
     } while (selection);
 }
 
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // Menu: Patient Management
 void menuPatient(struct Patient patient[], int max)
 {
@@ -172,7 +165,6 @@ void menuPatient(struct Patient patient[], int max)
     } while (selection);
 }
 
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // Menu: Patient edit
 void menuPatientEdit(struct Patient *patient)
 {
@@ -212,7 +204,6 @@ void menuPatientEdit(struct Patient *patient)
     } while (selection);
 }
 
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // Menu: Appointment Management
 void menuAppointment(struct ClinicData *data)
 {
@@ -255,13 +246,6 @@ void menuAppointment(struct ClinicData *data)
     } while (selection);
 }
 
-// ---------------------------------------------------------------------------
-// !!! INSERT/COPY YOUR MS#2 FUNCTION DEFINITIONS BELOW... !!!
-// Note: Maintain the same order/sequence as it is listed in the header file
-//       Properly organize/categorize any new functions accordingly
-// ---------------------------------------------------------------------------
-
-// Display's all patient data in the FMT_FORM | FMT_TABLE format
 // (Copy your code from MS#2)
 void displayAllPatients(const struct Patient patient[], int max, int fmt)
 {
@@ -413,9 +397,6 @@ void removePatient(struct Patient patient[], int max)
     clearInputBuffer();
 }
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// Milestone #3 mandatory functions...
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // View ALL scheduled appointments
 void viewAllAppointments(struct ClinicData *data)
